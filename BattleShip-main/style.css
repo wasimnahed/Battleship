@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+.header{
+    background-color: #779ECB;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo-text{
+    font-family: "Macondo",sans-serif;
+    font-size: 50px;
+}
+.content-wrapper{
+    display: flex;
+    height: 90%;
+}
+.navigation-container{
+    width: 21%;
+    height: 100%;
+}
+.sidebar,.info-card{
+    transition: all 0.5s;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 10px 0 10px -8px black;
+    align-items: center;
+}
+.close-sidebar{
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 90%;
+    padding: 10px;
+}
+.info-card{
+    transition: all 0.5s;
+    box-shadow: none;
+    color: whitesmoke;
+    justify-content: flex-start;
+}
+.opponent-ships{
+    display: flex;
+    flex-direction: column;
+    font-size: 175%;
+    font-family: 'akshar';
+}
+.color-markers{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+.color-marker{
+    display: flex;
+    align-items: center;
+    font-family: 'koulen';
+}
+ul{
+    margin-top: 35%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Patrick hand';    
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+a:hover{
+    color: #779ECB;
+}
+
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+}
+.screen{
+    width: 100%;
+    height: 100%;
+}
+.screen1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-cards{
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 25%;
+}
+.player-card{
+    width: 30.5%;
+}
+.player-header{
+    font-family: 'Koulen';
+    text-align: center;
+    font-size: 32px;
+}
+
+.player-buttons{
+    display: flex;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 40px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    width: 50%;
+    font-size: 150%;
+}
+.computer-btn{
+    color: black;
+    background-color: #779ECB;
+    padding: 5px;
+}
+.human-btn{
+    background-color: black;
+    color: #779ECB;
+}
+input{
+    border: none;
+    background-color: #779ECB;
+    font-size: 150%;
+    overflow: scroll;
+    padding: 3px;
+    width: 100%;
+    text-transform: capitalize;
+}
+.start-button{
+    transition: all 0.5s;
+    font-family: 'Rajdhani';
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.start-button:hover{
+    color: black;
+    background-color: yellowgreen;
+}
+
+
+.btn:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+.human-btn:hover{
+    width: 80%;
+}
+.computer-btn:hover{
+    width: 80%;
+}
+
+
+.grids-container{
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    background-color: whitesmoke;
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 50px;
+    flex-grow: 0;
+}
+  
+.grid-item {
+    transition: all 0.2s;
+    aspect-ratio: 1;
+    border: none;
+    text-align: center;
+    color: red;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.screen2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5%;
+}
+.player-placer-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ships{
+    margin-left: 10%;
+    margin-bottom: 4%;
+    font-family: 'koulen';
+    font-size: 32px;
+    width: 20%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ship{
+    transition: all 0.7s ease-in-out;
+    cursor: default;
+}
+.continue-btn{
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.player1name{
+    margin-top: 5%;
+    font-family: 'Koulen';
+    text-align: center;
+    font-size: 40px;
+    color: #115097;
+}
+
+.screen3{
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+}
+.player-grid-container{
+    width: 100%;
+    display: flex;
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    width: 50%;
+    padding: 0;
+    margin: 50px;
+    flex-grow: 0;
+}
+.cell-text{
+    font-family: 'koulen';
+    font-size: 40px;
+}
+.text-info{
+    font-family: 'roboto flex';
+    font-size: 20px;
+}
+
+.screen4{
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content: center;
+}
+input:focus{
+    outline: none;
+}
+.hide{
+    display: none;
+}
+
+a{
+    color: whitesmoke;
+}
